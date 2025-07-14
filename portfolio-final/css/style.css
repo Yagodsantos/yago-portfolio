@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-image:url(https://cdn.pixabay.com/photo/2021/02/07/22/04/blue-5992940_1280.png);
+  background-size: cover;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 1.5rem;
+}
+.foto-minha {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #004a99;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  color: #66aaff;
+  transform: scale(1.2);
+}
+
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+#intro {
+  text-align: center;
+}
+
+.skills-group {
+  max-width: 100%;
+  margin: 0 auto 4rem;
+  padding: 0 1rem;
+}
+
+.skills-subtitle-container {
+  background-color: #004a99;
+  color: white;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  margin: 0 auto 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.skills-group h3 {
+
+  font-size: 2rem;
+  font-weight: 800;
+  background-image: url(https://cdn.pixabay.com/photo/2021/02/07/22/04/blue-5992940_1280.png);
+  color: #fffdfd;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.skills-list-vertical {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list-vertical li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
+  transform-origin: left center;
+}
+
+.skills-list-vertical li img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+  transition: transform 0.35s ease;
+  user-select: none;
+}
+
+.skills-list-vertical li:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.25);
+  color: #004a99;
+}
+
+@media (max-width: 720px) {
+  .skills-group h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .skills-list-vertical li {
+    font-size: 1.6rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .skills-list-vertical li img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-group {
+    max-width:100%;
+  }
+  .skills-group h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .skills-list-vertical li {
+    font-size: 1.3rem;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .skills-list-vertical li img {
+    width: 32px;
+    height: 32px;
+  }
+}
+ 
+h2{
+   font-size: 2rem;
+  font-weight: 800;
+  background-image: url(https://cdn.pixabay.com/photo/2021/02/07/22/04/blue-5992940_1280.png);
+  color: #fffdfd;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project {
+  background: linear-gradient(135deg, #4386e4, #2614ca);
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  color: white;
+}
+
+.project:hover {
+  border: 2px solid #1d0586cc;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+  text-decoration: underline;
+}
+
+form div {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #0066cc;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: backgroun d0.3s ease;
+}
+
+button:hover {
+  background: #004999;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
